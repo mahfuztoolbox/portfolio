@@ -1,0 +1,248 @@
+{
+  "sections": {
+    "about": false,
+    "experience": true,
+    "projects": true,
+    "skills": true,
+    "education": true,
+    "certificates": false,
+    "blog": false,
+    "contact": true
+  },
+  "profile": {
+    "name": "Mahfuzur Rahman",
+    "title": "DevOps & Platform Engineer",
+    "location": "Dhaka, Bangladesh (UTC+6)",
+    "phone": "+880 1516-171979",
+    "email": "dmahfuzd@gmail.com",
+    "github": "https://github.com/mahfuztoolbox",
+    "linkedin": "https://www.linkedin.com/in/mahfuz70",
+    "resumeUrl": "/Mahfuzur_Rahman.pdf",
+    "summary": "8+ years building and operating production platforms in banking and enterprise IT. Designed AppFlux — a 5-module internal platform (API gateway, CD, monitoring, logs, ops hub) on Kubernetes and Nutanix VMs. Open to remote and international roles.",
+    "currentCompany": "Jamuna Bank Limited",
+    "experienceYears": "8+ years",
+    "availability": "Open to remote & international opportunities",
+    "highlights": [
+      {
+        "label": "Experience",
+        "value": "8+ years"
+      },
+      {
+        "label": "Platform built",
+        "value": "AppFlux · 5 modules"
+      },
+      {
+        "label": "Core stack",
+        "value": "K8s · Nutanix · OpenResty"
+      },
+      {
+        "label": "Availability",
+        "value": "Remote / Relocation"
+      }
+    ]
+  },
+  "about": {
+    "paragraphs": [
+      "Platform engineer at Jamuna Bank Limited — production Kubernetes on Nutanix, internal developer platform, API gateway, and full observability stack in a regulated on-premises environment."
+    ]
+  },
+  "experience": [
+    {
+      "id": "exp-1",
+      "company": "Jamuna Bank Limited",
+      "position": "DevOps & Platform Engineer · ICT Division",
+      "duration": "Feb 2021 – Present",
+      "location": "Dhaka, Bangladesh",
+      "highlights": [
+        "Built AppFlux — 5-module platform (API gateway, deployment automation, monitoring, log management, ops hub) with live demos for internal teams",
+        "Operate production Kubernetes on Nutanix VMs — RBAC, Harbor registry, GitLab CI/CD, and Trivy image scanning",
+        "Delivered OpenResty API gateway with JWT auth, rate limiting, and real-time traffic observability for banking services",
+        "Automated webhook-driven deployments for .NET, Node.js, Python, and static apps — rollback, RBAC, and audit trails",
+        "Run centralized observability (Prometheus, Grafana, ELK/OpenSearch) across infrastructure and production applications"
+      ]
+    },
+    {
+      "id": "exp-2",
+      "company": "Standard Group, Civil Engineers Limited",
+      "position": "Assistant IT Coordination Engineer",
+      "duration": "Jun 2019 – Feb 2021",
+      "location": "Dhaka, Bangladesh",
+      "highlights": [
+        "Managed Linux and Windows servers across dev, staging, and production",
+        "Implemented monitoring, patching, and security hardening for business-critical systems",
+        "Supported CI/CD adoption and deployment standardization with development teams"
+      ]
+    },
+    {
+      "id": "exp-3",
+      "company": "Hosting Bangladesh",
+      "position": "System Support Engineer",
+      "duration": "Apr 2016 – Jun 2019",
+      "location": "Dhaka, Bangladesh",
+      "highlights": [
+        "Administered Linux/Windows hosting — VPS, dedicated servers, DNS, and SSL/TLS",
+        "Automated server tasks with Bash, Python, and PowerShell",
+        "Resolved infrastructure and customer-facing hosting issues with proactive maintenance"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-5",
+      "title": "AppFlux All-in-One",
+      "description": "Central ops hub — SSO login, app catalog, health tiles, and RBAC-gated access to the full platform suite.",
+      "technologies": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "SSO",
+        "RBAC"
+      ],
+      "demo": "https://mahfuztoolbox.github.io/appflux-allinone/",
+      "docs": "https://github.com/mahfuztoolbox/appflux-allinone",
+      "featured": false
+    },
+    {
+      "id": "proj-4",
+      "title": "Application Deployment Platform",
+      "description": "Webhook CD server — GitHub/GitLab push to automated build, deploy, and restart via deploy.yaml.",
+      "technologies": [
+        "Node.js",
+        "React",
+        "Webhooks",
+        "Nginx",
+        "MongoDB"
+      ],
+      "demo": "https://mahfuztoolbox.github.io/application-deployment-platform/",
+      "docs": "https://github.com/mahfuztoolbox/application-deployment-platform",
+      "featured": false
+    },
+    {
+      "id": "proj-1",
+      "title": "Infra Pulse",
+      "description": "Infrastructure monitoring — host metrics, uptime probes, connectivity checks, incidents, and alerting.",
+      "technologies": [
+        "React",
+        "Node.js",
+        "Python",
+        "MongoDB",
+        "WebSocket"
+      ],
+      "demo": "https://mahfuztoolbox.github.io/infra-pulse/",
+      "docs": "https://github.com/mahfuztoolbox/infra-pulse",
+      "featured": false
+    },
+    {
+      "id": "proj-2",
+      "title": "ProjectFlux API Gateway",
+      "description": "OpenResty edge gateway — single API entry point with JWT auth, rate limiting, and live traffic dashboard.",
+      "technologies": [
+        "OpenResty",
+        "Lua",
+        "React",
+        "Redis",
+        "Kafka"
+      ],
+      "demo": "https://mahfuztoolbox.github.io/api-gateway/",
+      "docs": "https://github.com/mahfuztoolbox/api-gateway",
+      "featured": false
+    },
+    {
+      "id": "proj-3",
+      "title": "Application Log Management",
+      "description": "Gateway log platform — Kafka ingestion, OpenSearch indexing, search, traces, and IP block management.",
+      "technologies": [
+        "Node.js",
+        "React",
+        "Kafka",
+        "OpenSearch",
+        "MongoDB"
+      ],
+      "demo": "https://mahfuztoolbox.github.io/application-log-management/",
+      "docs": "https://github.com/mahfuztoolbox/application-log-management",
+      "featured": false
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill-1",
+      "category": "Platform & Containers",
+      "skills": [
+        "Kubernetes",
+        "Docker",
+        "Helm",
+        "Nutanix",
+        "OpenResty/Nginx"
+      ]
+    },
+    {
+      "id": "skill-2",
+      "category": "CI/CD & Automation",
+      "skills": [
+        "GitLab CI/CD",
+        "Harbor",
+        "Trivy",
+        "Jenkins",
+        "Ansible"
+      ]
+    },
+    {
+      "id": "skill-3",
+      "category": "Observability & Data",
+      "skills": [
+        "Prometheus",
+        "Grafana",
+        "ELK/OpenSearch",
+        "Kafka",
+        "MongoDB"
+      ]
+    },
+    {
+      "id": "skill-4",
+      "category": "Development & Security",
+      "skills": [
+        "Node.js",
+        "React",
+        "Python",
+        "Lua",
+        "JWT/RBAC"
+      ]
+    },
+    {
+      "id": "skill-5",
+      "category": "Cloud & Systems",
+      "skills": [
+        "Linux",
+        "On-Premises VMs",
+        "AWS (fundamentals)",
+        "Azure (fundamentals)",
+        "High Availability"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "degree": "BSc Computer Science & Engineering",
+      "institution": "Daffodil International University",
+      "location": "Dhaka, Bangladesh",
+      "year": "2017"
+    },
+    {
+      "id": "edu-2",
+      "degree": "Diploma in Computer Engineering",
+      "institution": "Munshiganj Polytechnic Institute",
+      "location": "Munshiganj, Bangladesh",
+      "year": "2012"
+    },
+    {
+      "id": "edu-3",
+      "degree": "Secondary School Certificate (SSC)",
+      "institution": "Nao Bhanga Joypur High School",
+      "location": "Comilla, Bangladesh",
+      "year": "2007"
+    }
+  ],
+  "certificates": [],
+  "blog": []
+}
