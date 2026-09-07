@@ -1,0 +1,21 @@
+Place your passport-style photo here:
+
+  public/Mahfuzur_Rahman.jpg
+
+Requirements:
+  - Filename must be exactly: Mahfuzur_Rahman.jpg
+  - Recommended size: 400x400 px or larger (square)
+  - Professional headshot, plain background
+
+Then regenerate PDF:
+  google-chrome --headless --disable-gpu --no-pdf-header-footer \
+    --print-to-pdf=public/Mahfuzur_Rahman.pdf \
+    file://$(pwd)/public/Mahfuzur_Rahman_CV.html
+
+Or open Mahfuzur_Rahman_CV.html in Chrome → Print → Save as PDF
+
+Deploy:
+  npm run deploy:pages
+
+Note: For US job applications, some employers prefer no photo on resume.
+      You can use a no-photo version by removing the image file before export.

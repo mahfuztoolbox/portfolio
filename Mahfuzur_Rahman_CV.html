@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Mahfuzur Rahman — Resume</title>
+<style>
+  @page { size: A4; margin: 12mm 14mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.25;
+    color: #222;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 0;
+  }
+  /* International header: name left, photo top-right */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 14pt;
+    margin-bottom: 8pt;
+    padding-bottom: 6pt;
+    border-bottom: 2pt solid #0f2744;
+  }
+  .header-info { flex: 1; min-width: 0; }
+  h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    margin: 0 0 2pt;
+    color: #0f2744;
+    letter-spacing: 0.3pt;
+    text-transform: uppercase;
+  }
+  .subtitle {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #2c4a6e;
+    margin: 0 0 5pt;
+  }
+  .contact {
+    font-size: 9pt;
+    color: #444;
+    line-height: 1.35;
+  }
+  .photo-wrap {
+    flex-shrink: 0;
+    width: 84px;
+    text-align: center;
+  }
+  .photo {
+    width: 84px;
+    height: 84px;
+    object-fit: contain;
+    object-position: center center;
+    background: #f0f0f0;
+    border: 1pt solid #bbb;
+    border-radius: 3px;
+    display: block;
+  }
+  .photo-fallback {
+    width: 84px;
+    height: 84px;
+    border: 1pt dashed #bbb;
+    border-radius: 4px;
+    font-size: 8pt;
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4px;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #0f2744;
+    text-transform: uppercase;
+    letter-spacing: 0.8pt;
+    border-bottom: 1pt solid #0f2744;
+    margin: 8pt 0 4pt;
+    padding-bottom: 2pt;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  .section-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .section-sub {
+    font-size: 8.5pt;
+    color: #666;
+    font-style: italic;
+    margin: -2pt 0 4pt;
+  }
+  p { margin: 0 0 4pt; }
+  ul { margin: 2pt 0 4pt; padding-left: 14pt; }
+  li { margin-bottom: 1.5pt; }
+  .job { margin-bottom: 6pt; }
+  .job-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8pt;
+  }
+  .job-title { font-weight: 700; font-size: 10pt; }
+  .job-dates { font-size: 9pt; color: #444; white-space: nowrap; }
+  .job-sub { font-size: 9pt; color: #555; font-style: italic; }
+  .job-company { font-size: 9.5pt; color: #333; margin-bottom: 2pt; }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2pt 12pt;
+    font-size: 9.5pt;
+    margin-bottom: 2pt;
+  }
+  .skill-item { margin: 0; }
+  .skill-label { font-weight: 700; color: #0f2744; }
+  .project { margin-bottom: 4pt; }
+  .project-name { font-weight: 700; font-size: 9.5pt; margin: 0; }
+  .project-meta { font-size: 9pt; color: #555; margin: 0 0 1pt; }
+  .edu-line { margin: 0 0 2pt; font-size: 9.5pt; }
+  .ref-block { font-size: 9pt; margin-bottom: 4pt; }
+  .ref-name { font-weight: 700; }
+  .note { font-size: 8.5pt; color: #666; font-style: italic; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-info">
+    <h1>Mahfuzur Rahman</h1>
+    <p class="subtitle">DevOps &amp; Platform Engineer</p>
+    <div class="contact">
+      Dhaka, Bangladesh (UTC+6) · +880 1516-171979 · dmahfuzd@gmail.com<br/>
+      linkedin.com/in/mahfuz70 · github.com/mahfuztoolbox · mahfuztoolbox.github.io/portfolio
+    </div>
+  </div>
+  <div class="photo-wrap">
+    <img
+      class="photo"
+      src="Mahfuzur_Rahman.jpg"
+      alt="Mahfuzur Rahman"
+      onerror="this.style.display='none'; document.getElementById('photo-placeholder').style.display='flex';"
+    />
+    <div id="photo-placeholder" class="photo-fallback" style="display:none;">Add photo:<br/>Mahfuzur_Rahman.jpg</div>
+  </div>
+</header>
+
+<h2>Professional Summary</h2>
+<p>
+  Platform Engineer with 8+ years designing, building, and operating production infrastructure in banking,
+  enterprise IT, and hosting. Lead platform engineering at Jamuna Bank on MIR Cloud and Nutanix — Kubernetes,
+  Harbor, GitLab CI/CD, API gateways, and internal developer tools. Built and operate <strong>AppFlux</strong>,
+  a 5-module production platform (API gateway, deployment automation, monitoring, log management, operations hub).
+  Experienced with OpenResty, Kafka, Keycloak, HashiCorp Vault, MinIO, Prometheus, Grafana, ELK/OpenSearch,
+  and AWS/Azure delivery per project requirements. Open to remote and international roles.
+</p>
+
+<h2>Technical Skills</h2>
+<div class="skills-grid">
+  <p class="skill-item"><span class="skill-label">Platform:</span> Kubernetes, Docker, Helm, Nutanix, OpenResty/Nginx, MetalLB, Istio</p>
+  <p class="skill-item"><span class="skill-label">CI/CD:</span> GitLab CI/CD, Harbor, Jenkins, Trivy, Ansible, n8n, Conductor</p>
+  <p class="skill-item"><span class="skill-label">Data &amp; Messaging:</span> Kafka, Redis, MongoDB, OpenSearch, MinIO, ELK, Debezium</p>
+  <p class="skill-item"><span class="skill-label">Security:</span> HashiCorp Vault, Keycloak, JWT/RBAC, API Keys, Linux Hardening</p>
+  <p class="skill-item"><span class="skill-label">Observability:</span> Prometheus, Grafana, ELK/OpenSearch, Alerting, k6, Playwright</p>
+  <p class="skill-item"><span class="skill-label">Cloud &amp; OS:</span> MIR Cloud, Nutanix VMs, AWS, Azure, Linux, Windows Server</p>
+  <p class="skill-item"><span class="skill-label">Development:</span> Node.js, React, Python, Lua, Shell/Bash, REST APIs</p>
+  <p class="skill-item"><span class="skill-label">Tools:</span> Jellyfin, Paperless, Git, Nginx, DNS, High Availability</p>
+</div>
+
+<h2>Professional Experience</h2>
+
+<div class="job">
+  <div class="job-row">
+    <span class="job-title">DevOps &amp; Platform Engineer</span>
+    <span class="job-dates">Feb 2021 – Present</span>
+  </div>
+  <div class="job-sub">Assistant Officer · ICT Division</div>
+  <div class="job-company">Jamuna Bank Limited — Gulshan-1, Dhaka, Bangladesh</div>
+  <ul>
+    <li>Built and operate <strong>AppFlux</strong> — 5-module production platform (API gateway, deployment automation, Infra Pulse monitoring, log management, All-in-One ops hub) on MIR Cloud and Nutanix Kubernetes</li>
+    <li>Administer production Kubernetes on Nutanix VMs — RBAC, resource governance, Harbor registry, GitLab CI/CD, Trivy scanning, automated upgrades</li>
+    <li>Delivered OpenResty API gateway with Keycloak/JWT auth, rate limiting, draft→publish routing, Redis traffic control, and Kafka-based access logging</li>
+    <li>Built webhook-driven CD platform for .NET, Node.js, Python, and static React/Vite apps — deploy.yaml driven builds, rollback, RBAC, and audit trails</li>
+    <li>Run Prometheus, Grafana, and ELK/OpenSearch for infrastructure and application monitoring, alerting, and incident response</li>
+    <li>Integrated HashiCorp Vault, Keycloak SSO, Trivy image scanning, and Linux hardening for regulated banking workloads</li>
+    <li>Operate Kafka, MongoDB, Redis, MinIO, and OpenSearch for platform services, gateway logs, and internal tooling</li>
+    <li>Use n8n and Conductor for operational workflows; Ansible and shell automation for repeatable infrastructure tasks</li>
+    <li>Primary production on MIR Cloud / on-premises Nutanix; deliver AWS and Azure solutions per project requirements</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-row">
+    <span class="job-title">Assistant IT Coordination Engineer</span>
+    <span class="job-dates">Jun 2019 – Feb 2021</span>
+  </div>
+  <div class="job-company">Standard Group, Civil Engineers Limited — Dhaka, Bangladesh</div>
+  <ul>
+    <li>Managed Linux and Windows Server environments across development, staging, and production systems</li>
+    <li>Maintained infrastructure availability through monitoring, patch management, and performance optimization</li>
+    <li>Strengthened server security through firewall administration, access control, and system hardening</li>
+    <li>Automated administrative tasks using Bash, PowerShell, and scheduling tools</li>
+    <li>Supported CI/CD adoption and deployment standardization with development teams</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-row">
+    <span class="job-title">System Support Engineer</span>
+    <span class="job-dates">Apr 2016 – Jun 2019</span>
+  </div>
+  <div class="job-company">Hosting Bangladesh — Dhaka, Bangladesh</div>
+  <ul>
+    <li>Managed Linux and Windows hosting infrastructure including VPS, dedicated servers, DNS, and SSL/TLS</li>
+    <li>Automated server administration with Bash, Python, and PowerShell</li>
+    <li>Resolved customer and infrastructure issues through proactive maintenance and troubleshooting</li>
+  </ul>
+</div>
+
+<section class="section-block">
+  <h2>Selected Projects — AppFlux Platform</h2>
+  <p class="section-sub">Jamuna Bank production platform · UI previews: mahfuztoolbox.github.io/portfolio</p>
+  <div class="project">
+    <p class="project-name">AppFlux All-in-One · Application Deployment Platform · Infra Pulse</p>
+    <p class="project-meta">Ops hub, webhook CD, and infrastructure monitoring — React, Node.js, Python, MongoDB, Keycloak</p>
+  </div>
+  <div class="project">
+    <p class="project-name">ProjectFlux API Gateway · Application Log Management</p>
+    <p class="project-meta">OpenResty edge gateway and log analytics — Kafka, OpenSearch, Redis, Lua, React</p>
+  </div>
+</section>
+
+<section class="section-block">
+<h2>Education</h2>
+<p class="edu-line"><strong>BSc Computer Science &amp; Engineering</strong>, 2017 — Daffodil International University, Dhaka</p>
+<p class="edu-line"><strong>Diploma in Computer Engineering</strong>, 2012 — Munshiganj Polytechnic Institute, Bangladesh</p>
+<p class="edu-line"><strong>Secondary School Certificate (SSC)</strong>, 2007 — Nao Bhanga Joypur High School, Comilla</p>
+
+<h2>Languages</h2>
+<p>Bengali (Native) · English (Professional Working Proficiency)</p>
+</section>
+
+<section class="section-block">
+<h2>References</h2>
+<div class="ref-block">
+  <span class="ref-name">Mr. Kazi Amranul Houque</span> — Team Leader, Infrastructure (AVP), Jamuna Bank Limited · +880 1777-743622 · amran@jamunabank.com.bd
+</div>
+<div class="ref-block">
+  <span class="ref-name">Mr. Matiar Rahman</span> — Senior Developer (FAVP), Jamuna Bank Limited · +880 1722-162366 · matiar@jamunabank.com.bd
+</div>
+</section>
+
+</body>
+</html>

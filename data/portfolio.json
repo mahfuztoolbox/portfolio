@@ -1,0 +1,281 @@
+{
+  "sections": {
+    "about": true,
+    "experience": true,
+    "projects": true,
+    "skills": true,
+    "education": false,
+    "certificates": false,
+    "blog": false,
+    "contact": true
+  },
+  "profile": {
+    "name": "Mahfuzur Rahman",
+    "title": "DevOps & Platform Engineer",
+    "location": "Dhaka, Bangladesh (UTC+6)",
+    "phone": "+880 1516-171979",
+    "email": "dmahfuzd@gmail.com",
+    "github": "https://github.com/mahfuztoolbox",
+    "linkedin": "https://www.linkedin.com/in/mahfuz70",
+    "resumeUrl": "/Mahfuzur_Rahman.pdf",
+    "portfolioUrl": "https://mahfuztoolbox.github.io/portfolio/",
+    "summary": "Platform Engineer with 8+ years designing, building, and operating production infrastructure in enterprise IT and hosting. Lead platform engineering across Kubernetes, Harbor, GitLab CI/CD, API gateways, and internal developer tools. Open to remote and international roles.",
+    "tagline": "I build and run production platforms — Kubernetes, CI/CD, API gateways, and internal developer tools for enterprise environments.",
+    "projectsSubtitle": "Integrated platform · deploy → gateway → observe → catalog",
+    "projectsIntro": "One integrated platform in daily production use — following the application lifecycle: deploy apps, expose APIs through a gateway, monitor infrastructure, search logs, and browse everything live in the developer catalog. Each step maps to familiar industry tools (see comparisons on each card), tailored for regulated on-premises Kubernetes. Links are UI previews with sample data; live systems handle deployments, API traffic, monitoring, logs, and the developer portal.",
+    "platformArchitectureCaption": "Catalog is the developer entry point; the lifecycle pipeline runs deploy → expose → observe on shared on-premises runtime.",
+    "resumeNote": "Full work history, education, and references are in the downloadable resume.",
+    "currentCompany": "Jamuna Bank Limited",
+    "experienceYears": "8+ years",
+    "availability": "Open to remote & international opportunities",
+    "highlights": [
+      {
+        "label": "Experience",
+        "value": "8+ years"
+      },
+      {
+        "label": "Platform",
+        "value": "Deploy · Gateway · Monitor · Logs · Catalog"
+      },
+      {
+        "label": "Stack",
+        "value": "Kubernetes clusters · Cloud · VMs"
+      },
+      {
+        "label": "Availability",
+        "value": "Remote / Relocation"
+      }
+    ]
+  },
+  "about": {
+    "paragraphs": [
+      "I am a DevOps & Platform Engineer with 8+ years across enterprise IT and hosting. My work spans Kubernetes clusters, CI/CD automation, API gateways, observability stacks, and internal platforms that help development teams ship safely.",
+      "I designed and operate an integrated platform so development teams can deploy, expose APIs, monitor systems, search logs, and find tools from one place — without manual ops for every release. Project links on this site are UI previews with sample data."
+    ]
+  },
+  "experience": [
+    {
+      "id": "exp-1",
+      "company": "Jamuna Bank Limited",
+      "position": "DevOps & Platform Engineer",
+      "roleNote": "Assistant Officer · ICT Division",
+      "duration": "Feb 2021 – Present",
+      "location": "Dhaka, Bangladesh",
+      "highlights": [
+        "Built and operate a 5-module production platform (Application Deployment, API Gateway, Infra Monitoring, Log Management, Application Catalog Hub) on MIR Cloud and Nutanix Kubernetes",
+        "Administer production Kubernetes on Nutanix VMs — RBAC, resource governance, Harbor registry, GitLab CI/CD, Trivy scanning, automated upgrades",
+        "Delivered OpenResty API gateway with Keycloak/JWT auth, rate limiting, draft→publish routing, Redis traffic control, and Kafka-based access logging",
+        "Built webhook-driven CD control plane for on-prem releases — reviewer gates, Docker/containerd on Kubernetes, systemd packages (.NET, Node/Nest, Python, SPAs), health checks, nginx/SSL edge; integrates with Jenkins/GitLab for build",
+        "Run Prometheus, Grafana, and ELK/OpenSearch for infrastructure and application monitoring, alerting, and incident response",
+        "Integrated HashiCorp Vault, Keycloak SSO, Trivy image scanning, and Linux hardening for regulated banking workloads",
+        "Operate Kafka, MongoDB, Redis, MinIO, and OpenSearch for platform services, gateway logs, and internal tooling",
+        "Use n8n and Conductor for operational workflows; Ansible and shell automation for repeatable infrastructure tasks",
+        "Primary production on MIR Cloud / on-premises Nutanix; deliver AWS and Azure solutions per project requirements"
+      ]
+    },
+    {
+      "id": "exp-2",
+      "company": "Standard Group, Civil Engineers Limited",
+      "position": "Assistant IT Coordination Engineer",
+      "duration": "Jun 2019 – Feb 2021",
+      "location": "Dhaka, Bangladesh",
+      "highlights": [
+        "Managed Linux and Windows Server environments across development, staging, and production systems",
+        "Maintained infrastructure availability through monitoring, patch management, and performance optimization",
+        "Strengthened server security through firewall administration, access control, and system hardening",
+        "Automated administrative tasks using Bash, PowerShell, and scheduling tools",
+        "Supported CI/CD adoption and deployment standardization with development teams"
+      ]
+    },
+    {
+      "id": "exp-3",
+      "company": "Hosting Bangladesh",
+      "position": "System Support Engineer",
+      "duration": "Apr 2016 – Jun 2019",
+      "location": "Dhaka, Bangladesh",
+      "highlights": [
+        "Managed Linux and Windows hosting infrastructure including VPS, dedicated servers, DNS, and SSL/TLS",
+        "Automated server administration with Bash, Python, and PowerShell",
+        "Resolved customer and infrastructure issues through proactive maintenance and troubleshooting"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-4",
+      "title": "Application Deployment Platform",
+      "description": "On-prem teams often stitch CI, SSH scripts, and manual nginx edits — breaking audit and slowing production. This platform is a single CD control plane: register apps and servers, enforce reviewer gates, deploy multi-stack environments (Docker/containerd for Kubernetes, or systemd packages for .NET, Node/Nest, Python, and static SPAs), verify health, and manage edge nginx/SSL.",
+      "benefit": "Jenkins or GitLab builds the code. This tool deploys it to production — with approval steps, health checks, and nginx/SSL setup. Teams do not SSH into servers to release.",
+      "comparison": "Like Argo CD or GitLab Deploy (tools that push apps to production). Built for enterprise on-premises — Kubernetes containers, traditional systemd apps, and nginx edge config in one place.",
+      "technologies": ["Node.js", "React", "Docker", "Kubernetes", "containerd", "systemd", "Nginx", "Jenkins", "GitLab", "Webhooks", "MongoDB"],
+      "demo": "https://mahfuztoolbox.github.io/application-deployment-platform/",
+      "docs": "https://github.com/mahfuztoolbox/application-deployment-platform",
+      "featured": true,
+      "badge": "Step 1 · Deploy"
+    },
+    {
+      "id": "proj-2",
+      "title": "API Gateway Platform",
+      "description": "OpenResty edge gateway — single entry point for microservices with JWT auth, rate limiting, and traffic dashboard.",
+      "benefit": "All APIs go through one secure front door — with login checks, rate limits, and a traffic view for the team.",
+      "comparison": "Like Kong or AWS API Gateway — one entry point for microservices instead of many open endpoints.",
+      "technologies": ["OpenResty", "Lua", "React", "Redis", "Kafka"],
+      "demo": "https://mahfuztoolbox.github.io/api-gateway/",
+      "docs": "https://github.com/mahfuztoolbox/api-gateway",
+      "featured": false,
+      "badge": "Step 2 · Expose"
+    },
+    {
+      "id": "proj-1",
+      "title": "Infra Monitoring Platform",
+      "description": "Centralized infrastructure monitoring — host metrics, uptime probes, connectivity checks, incidents, and alerts.",
+      "benefit": "One dashboard shows if servers and services are up. Alerts go out before users report problems.",
+      "comparison": "Like Grafana + Prometheus or Datadog — monitoring and alerts for on-prem servers, without needing a cloud-only product.",
+      "technologies": ["React", "Node.js", "Python", "MongoDB", "WebSocket"],
+      "demo": "https://mahfuztoolbox.github.io/infra-pulse/",
+      "docs": "https://github.com/mahfuztoolbox/infra-pulse",
+      "featured": false,
+      "badge": "Step 3 · Monitor"
+    },
+    {
+      "id": "proj-3",
+      "title": "Log Management System",
+      "description": "Central log platform — Kafka ingestion, OpenSearch indexing, search, request traces, and IP block management.",
+      "benefit": "Search all gateway and app logs in one place — faster fixes and easier audit checks.",
+      "comparison": "Like ELK Stack or Splunk — collect logs in one system instead of checking each server by hand.",
+      "technologies": ["Node.js", "React", "Kafka", "OpenSearch", "MongoDB"],
+      "demo": "https://mahfuztoolbox.github.io/application-log-management/",
+      "docs": "https://github.com/mahfuztoolbox/application-log-management",
+      "featured": false,
+      "badge": "Step 3 · Logs"
+    },
+    {
+      "id": "proj-5",
+      "title": "Application Catalog Hub",
+      "description": "Developer portal — SSO login, application registry, health overview, and links to deployment, gateway, monitoring, and log tools.",
+      "benefit": "Developers log in once, see all apps and their health, and jump to deploy, gateway, monitor, or log tools.",
+      "comparison": "Like Backstage or an internal developer portal — one homepage for apps and platform tools.",
+      "technologies": ["React", "Node.js", "MongoDB", "SSO", "RBAC"],
+      "demo": "https://mahfuztoolbox.github.io/appflux-allinone/",
+      "docs": "https://github.com/mahfuztoolbox/appflux-allinone",
+      "featured": false,
+      "badge": "Step 4 · Catalog"
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill-1",
+      "category": "Platform & Containers",
+      "skills": [
+        "Kubernetes",
+        "Docker",
+        "Helm",
+        "Nutanix",
+        "OpenResty/Nginx",
+        "MetalLB",
+        "Istio"
+      ]
+    },
+    {
+      "id": "skill-2",
+      "category": "CI/CD & Automation",
+      "skills": [
+        "GitLab CI/CD",
+        "Harbor",
+        "Jenkins",
+        "Trivy",
+        "Ansible",
+        "n8n",
+        "Conductor"
+      ]
+    },
+    {
+      "id": "skill-3",
+      "category": "Data, Messaging & Storage",
+      "skills": [
+        "Apache Kafka",
+        "Redis",
+        "MongoDB",
+        "OpenSearch",
+        "MinIO",
+        "ELK Stack",
+        "Debezium"
+      ]
+    },
+    {
+      "id": "skill-4",
+      "category": "Security & Identity",
+      "skills": [
+        "HashiCorp Vault",
+        "Keycloak",
+        "JWT/RBAC",
+        "API Keys",
+        "Linux Hardening",
+        "Firewall Admin"
+      ]
+    },
+    {
+      "id": "skill-5",
+      "category": "Observability & Monitoring",
+      "skills": [
+        "Prometheus",
+        "Grafana",
+        "ELK/OpenSearch",
+        "Alerting",
+        "k6",
+        "Playwright"
+      ]
+    },
+    {
+      "id": "skill-6",
+      "category": "Cloud & Infrastructure",
+      "skills": [
+        "MIR Cloud",
+        "Nutanix VMs",
+        "On-Premises",
+        "AWS",
+        "Azure",
+        "Linux",
+        "Windows Server"
+      ]
+    },
+    {
+      "id": "skill-7",
+      "category": "Development & Tools",
+      "skills": [
+        "Node.js",
+        "React",
+        "Python",
+        "Lua",
+        "Shell/Bash",
+        "Jellyfin",
+        "Paperless"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "degree": "BSc Computer Science & Engineering",
+      "institution": "Daffodil International University",
+      "location": "Dhaka, Bangladesh",
+      "year": "2017"
+    },
+    {
+      "id": "edu-2",
+      "degree": "Diploma in Computer Engineering",
+      "institution": "Munshiganj Polytechnic Institute",
+      "location": "Munshiganj, Bangladesh",
+      "year": "2012"
+    },
+    {
+      "id": "edu-3",
+      "degree": "Secondary School Certificate (SSC)",
+      "institution": "Nao Bhanga Joypur High School",
+      "location": "Comilla, Bangladesh",
+      "year": "2007"
+    }
+  ],
+  "certificates": [],
+  "blog": []
+}
